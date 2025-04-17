@@ -5,8 +5,6 @@ import { useRouter } from "next/navigation";
 import { Button } from "@mui/material";
 
 export default function UrlPreview({post}: {post:URL}){
-    const router = useRouter();
-
     return(
         <div className ="bg-blue-200 p-6 m-4 w-full max-w-md text-center">
             <h2 className="font-bold text-xl mb-2 text-black">WE GOT YOU :D</h2>
