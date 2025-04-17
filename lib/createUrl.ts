@@ -7,7 +7,7 @@ import {URL} from "@/types";
 export default async function createUrl(url: string, alias: string): Promise<URL> {
     console.log("creating new url");
 
-    const baseUrl = "https://mp-5-lkk19.vercel.app/";
+    const baseUrl = "https://mp-5-lkk19.vercel.app";
     const shortUrl = `${baseUrl}/${alias}`;
     console.log("this is the shortUrl", shortUrl)
 

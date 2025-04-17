@@ -1,7 +1,6 @@
 // components/url-preview.tsx
 
 import { URL } from "@/types";
-import { useRouter } from "next/navigation";
 import { Button } from "@mui/material";
 
 export default function UrlPreview({post}: {post:URL}){
