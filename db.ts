@@ -19,11 +19,9 @@ async function connect(): Promise<Db> {
     return client.db(DB_NAME);
 }
 
-export default async function getCollection (
-    collectionName: string,
-): Promise<Collection> {
+export default async function getCollection(collectionName: string,): Promise<Collection> {
     if (!db) {
         db = await connect();
     }
-    return db.collection(collectionName);
+    return db.collection (collectionName);
 }
