@@ -19,7 +19,7 @@ export default async function createUrl(url: string, alias: string): Promise<{su
         if (!["http:", "https:"].includes(parsed.protocol)) {
         return { success: false, error: "URL must start with http:// or https://" };
         }
-    } catch (e) {
+    } catch {
         return { success: false, error: "Invalid URL format. Please include http:// or https://" };
     }
 
@@ -39,7 +39,7 @@ export default async function createUrl(url: string, alias: string): Promise<{su
             error: "Target site is unreachable or returned an error status."
         };
         }
-    } catch (e) {
+    } catch {
         return {
         success: false,
         error: "Target domain is unreachable or has no DNS record."
