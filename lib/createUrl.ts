@@ -5,7 +5,7 @@ import getCollection, { URL_COLLECTION } from "@/db";
 import type { URL } from "@/types";
 
 export default async function createUrl(url: string, alias: string): Promise<{success: boolean; data?: URL; error?: string}> {
-    const baseUrl = "https://mp-5-lkk19.vercel.app";
+    const baseUrl = "https://mp-5-navy.vercel.app";
     const shortUrl = `${baseUrl}/${alias}`;
 
     // This is checking for empty
